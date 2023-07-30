@@ -11,7 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MovieActivity extends AppCompatActivity {
     public static String MOVIE_EXTRA = "EXTRA_MOVIE";
@@ -71,6 +75,7 @@ public class MovieActivity extends AppCompatActivity {
             SharedPrefsManager.removeFromFavourites(movie, this);
         } else {
             SharedPrefsManager.addToFavourites(movie, this);
+            addFavourite(movie.getId());
         }
 
         setFavouritesButtonText();
@@ -87,5 +92,11 @@ public class MovieActivity extends AppCompatActivity {
         }
 
         favouritesButton.setText(buttonText);
+    }
+    public void addFavourite(Integer index) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        Map<String,Integer> movieID =new HashMap<>();
+        movieID.put("movieID", index);
+        db.collection("FavouritesMovies").add(movieID);
     }
 }

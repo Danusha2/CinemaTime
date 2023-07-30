@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "933720852668",
+    "project_id": "cinematime-68701",
+    "storage_bucket": "cinematime-68701.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933720852668:android:f9beda0832c62a361768b9",
+        "android_client_info": {
+          "package_name": "com.example.cinematime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933720852668-nd8dtbmmjlegjanploj5f734cp74psr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinematime",
+            "certificate_hash": "098b8cd0c1b68159439f30e4c89c2d01b3ffc06b"
+          }
+        },
+        {
+          "client_id": "933720852668-j12ajaqpimkuejrqns3dcq3dun13ishp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_qgkh8CasvDFq0I3cz1IwucMxPK6rmYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933720852668-j12ajaqpimkuejrqns3dcq3dun13ishp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
